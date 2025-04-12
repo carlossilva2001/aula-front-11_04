@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site HTML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
         <h1>Bem-vindo ao Meu Site</h1>
+        <figure>
+            <img src="figs/perfil.jpg" alt="Foto de Perfil" width="150">
+            <figcaption>Carlos Silva</figcaption>
+        </figure>
     </header>
 
     <nav>
-        <a href="https://github.com/carlossilva2001/aula-front-11_04"> Codigo Fonte</a> |
-        <a href="mailto: Carlossilva.2001@alunos.utfpr.edu.br">Contato</a> |
+        <a href="https://github.com/carlossilva2001/aula-front-11_04">Código Fonte</a> |
+        <a href="mailto:Carlossilva.2001@alunos.utfpr.edu.br">Contato</a> |
         <a href="https://carlossilva2001.github.io/Curriculum/">Sobre Mim</a>
     </nav>
 
     <main>
         <section id="sobre">
             <h2>Sobre Mim</h2>
-            <p>Esta é uma seção dedicada a informações sobre mim.</p>
+            <p>Me chamo Carlos Silva, possuo 23 anos e atualmente curso o 4º período de Engenharia de Software. Embora seja meu 6º período na universidade, sou entusiasta da agricultura e quero seguir carreira trabalhando com tecnologias agrícolas.</p>
         </section>
 
         <article>
             <h2>Minhas Habilidades</h2>
             <ul>
-                <li>Programação</li>
-                <li>Design Responsivo</li>
-                <li>JavaScript</li>
-                <li>HTML e CSS</li>
-                <li>Banco de Dados</li>
+                <li><i class="material-icons">code</i> Programação</li>
+                <li><i class="material-icons">devices</i> Design Responsivo</li>
+                <li><i class="material-icons">javascript</i> JavaScript</li>
             </ul>
         </article>
 
@@ -40,6 +43,22 @@
                 <li><a href="https://www.w3schools.com/">W3Schools</a></li>
             </ol>
         </aside>
+        
+        <section>
+            <h2>Entre em contato</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="30" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
     </main>
 
     <footer>
